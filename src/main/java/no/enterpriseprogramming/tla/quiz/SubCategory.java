@@ -1,9 +1,7 @@
 package no.enterpriseprogramming.tla.quiz;
 
-public class Category {
+public class SubCategory {
 
     private int id;
     private String name;
-
-
 }
