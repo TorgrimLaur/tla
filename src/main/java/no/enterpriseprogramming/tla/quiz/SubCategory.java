@@ -5,6 +5,15 @@ public class SubCategory {
     private int id;
     private String name;
 
+    public SubCategory(int id, String name){
+        this.id = id;
+        this.name = name;
+    }
+
+    public SubCategory(){
+
+    }
+
     public int getId() {
         return id;
     }
