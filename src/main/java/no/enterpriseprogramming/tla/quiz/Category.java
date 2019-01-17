@@ -1,24 +1,26 @@
 package no.enterpriseprogramming.tla.quiz;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Category {
 
-    private int id;
+    @Id@GeneratedValue
+    private Long id;
     private String name;
 
-    public Category(int id, String name){
-        this.id = id;
-        this.name = name;
-    }
     public Category(){
 
     }
 
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -1,7 +1,13 @@
 package no.enterpriseprogramming.tla.quiz;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Quiz {
 
+    @Id@GeneratedValue
     private int id;
     private String question;
     private String answer1;
@@ -10,15 +16,7 @@ public class Quiz {
     private String answer4;
     private int correctAnswer;
 
-    public Quiz(int id, String question, String answer1, String answer2, String answer3, String answer4, int correctAnswer){
-        this.id = id;
-        this.question = question;
-        this.answer1 = answer1;
-        this.answer2 = answer2;
-        this.answer3 = answer3;
-        this.answer4 = answer4;
-        this.correctAnswer = correctAnswer;
-    }
+
 
     public int getId() {
         return id;
